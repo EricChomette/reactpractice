@@ -7,7 +7,14 @@ import Hello from './components/hello';
 
 // import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<Hello />,document.getElementById('root')
+const root = <div>
+  <Hello firstname="Boris" lastname="Papillard" />
+  <Hello firstname="Romain" lastname="Papillard" />
+</div>
+
+
+
+ReactDOM.render(root ,document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
